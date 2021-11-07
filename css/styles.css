@@ -13,9 +13,12 @@ body {
 
 /* header  */
 .header {
+  height: 80px;
   background: #ffffff;
 }
-
+.nav-item {
+  display: inline-block;
+}
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -24,34 +27,35 @@ body {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #000000;
+  list-style-type: none;
+  padding-left: 215px;
+  padding-right: 90px;
 }
-
 .pre-logo {
   color: #2196f3;
 }
-
-.nav-list a {
+.main-navigator {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
-}
-.nav-list a:hover,
-.nav-list a:focus {
-  color: #2196f3;
+  padding-right: 50px;
 }
 
-.header-contacts a {
+.main-navigator:hover,
+.main-navigator:focus {
+  color: #2196f3;
+}
+.header-contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
 }
-
-.header-contacts a:hover,
-.header-contacts a:focus {
+.header-contacts:hover,
+.header-contacts:focus {
   color: #2196f3;
 }
 
@@ -189,12 +193,16 @@ body {
 .footer {
   height: 252px;
   background: #2f303a;
+  padding-left: 200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
 }
 
 .exact-address {
   font-weight: normal;
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -203,8 +211,71 @@ body {
 .email,
 .telephone {
   font-weight: normal;
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio page */
+/* section projects */
+.projects {
+}
+.filter {
+  display: inline-block;
+}
+.filter-button {
+  background: #f5f4fa;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  border: 0;
+  border-radius: 4px;
+  height: 40px;
+  padding-right: 10px;
+  /* margin: 22px 6px; */
+}
+.filter-button:hover,
+.filter-button:focus {
+  background: #2196f3;
+  color: #ffffff;
+}
+
+/* projects */
+.projects {
+  text-align: center;
+}
+.project-item {
+  display: inline-block;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border: 1px double #eeeeee;
+}
+.project-img {
+}
+.project-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.project-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
