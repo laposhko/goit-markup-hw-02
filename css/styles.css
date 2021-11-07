@@ -1,12 +1,18 @@
+:root {
+  --color-primary: #ffffff;
+  --accent-color: #2196f3;
+  --dark-backgroung: #2f303a;
+  --item-backgroung: #f5f4fa;
+  --description-text-color: #757575;
+  --title-text-color: #212121;
+}
 body {
   font-family: Roboto;
   border-color: #e5e5e5;
 }
-
 .list {
   list-style-type: none;
 }
-
 .link {
   text-decoration: none;
 }
@@ -14,7 +20,7 @@ body {
 /* header  */
 .header {
   height: 80px;
-  background: #ffffff;
+  background: var(--color-primary);
 }
 .nav-item {
   display: inline-block;
@@ -24,7 +30,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
   list-style-type: none;
@@ -32,55 +38,54 @@ body {
   padding-right: 90px;
 }
 .pre-logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .main-navigator {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-text-color);
   padding-right: 50px;
 }
-
 .main-navigator:hover,
 .main-navigator:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-contacts {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--description-text-color);
 }
 .header-contacts:hover,
 .header-contacts:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* section hero */
 .hero {
-  background: #2f303a;
+  background: var(--dark-backgroung);
   height: 600px;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-primary);
   padding-top: 200px;
 }
 .hero-button {
-  background: #2196f3;
+  background: var(--accent-color);
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--color-primary);
   margin: 0 auto;
   display: block;
   width: 200px;
@@ -103,32 +108,28 @@ body {
 .feature-title {
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--title-text-color);
   padding-bottom: 10px;
 }
 .feature-description {
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--description-text-color);
 }
 
 /* section activity */
-.activity {
-  /* padding: 0; */
-}
 .activity-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
   padding-bottom: 40px;
 }
 .activities-list {
@@ -140,23 +141,19 @@ body {
   padding-right: 30px;
 }
 
-.activities-img {
-  /* display: inline-block; */
-}
-
 /* section team */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--item-backgroung);
   height: 648px;
   margin-top: 100px;
 }
 .team-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
   padding-top: 100px;
   padding-bottom: 40px;
 }
@@ -168,84 +165,85 @@ body {
   margin-right: 30px;
   width: 270px;
   height: 368px;
-  background-color: #ffffff;
-}
-.team-item-img {
+  background-color: var(--color-primary);
 }
 .team-item-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 .team-item-job {
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--description-text-color);
 }
 
 /* section footer */
 .footer {
+  font-family: Roboto;
   height: 252px;
-  background: #2f303a;
+  background: var(--dark-backgroung);
   padding-left: 200px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.address {
-}
-
 .exact-address {
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-primary);
 }
 .email,
 .telephone {
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.exact-address:hover,
+.exact-address:focus,
+.email:hover,
+.email:focus,
+.telephone:hover,
+.telephone:focus {
+  color: var(--accent-color);
 }
 
 /* Portfolio page */
 /* section projects */
-.projects {
-}
 .filter {
   display: inline-block;
 }
 .filter-button {
-  background: #f5f4fa;
+  font-family: Roboto;
+  background: var(--item-backgroung);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
   border: 0;
   border-radius: 4px;
   height: 40px;
   padding-right: 10px;
-  /* margin: 22px 6px; */
+  cursor: pointer;
 }
 .filter-button:hover,
 .filter-button:focus {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--accent-color);
+  color: var(--color-primary);
 }
 
 /* projects */
@@ -254,28 +252,21 @@ body {
 }
 .project-item {
   display: inline-block;
-  padding-right: 30px;
+  /* padding-right: 30px; */
   padding-bottom: 30px;
   border: 1px double #eeeeee;
 }
-.project-img {
-}
 .project-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 .project-description {
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 187% */
-
+  line-height: 1.87;
   letter-spacing: 0.03em;
-
-  color: #757575;
+  color: var(--description-text-color);
 }
